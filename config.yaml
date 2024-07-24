@@ -15,11 +15,19 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: www-wcyicloudv2ray-top # unique identifier
-    name: X-UI
+  - id: www.wcyicloud.lol # unique identifier
+    name: X-UI-搬瓦工
     description: '' # default=empty You write code. They handle the rest.
-    url: 'https://www.wcyicloudv2ray.top' # URL to fetch
+    url: 'https://www.wcyicloud.lol' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
+- id: www.wcyicloud.top:3001
+    name: Sub-Store
+    description: '' 
+    url: 'https://www.wcyicloud.top:3001' 
+    method: GET 
+    expectStatus: 200 
+    followRedirect: false 
+    linkable: true 
